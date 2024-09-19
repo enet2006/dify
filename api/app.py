@@ -54,11 +54,11 @@ from services.account_service import AccountService
 warnings.simplefilter("ignore", ResourceWarning)
 
 # fix windows platform
-if os.name == "nt":
-    os.system('tzutil /s "UTC"')
-else:
-    os.environ["TZ"] = "UTC"
-    time.tzset()
+# if os.name == "nt":
+#     os.system('tzutil /s "UTC"')
+# else:
+#     os.environ["TZ"] = "UTC"
+#     time.tzset()
 
 
 class DifyApp(Flask):
